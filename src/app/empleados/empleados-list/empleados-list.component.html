@@ -1,0 +1,32 @@
+<h2 class="titulo">Empleados</h2>
+
+<div class="empleados-container">
+
+  <div class="empleado-card" *ngFor="let emp of empleados">
+
+    <div class="empleado-header">
+      <h3>{{ emp.nombre }}</h3>
+      <button class="btn" (click)="asignarTurno(emp.id)">
+        Asignar turno
+      </button>
+    </div>
+
+    <div class="turnos" *ngIf="turnosPorEmpleado[emp.id]?.length; else sinTurnos">
+      <h4>Turnos asignados</h4>
+      <ul>
+        <li *ngFor="let turno of turnosPorEmpleado[emp.id]">
+           {{ turno.fecha }} |
+           {{ turno.horaInicio }} - {{ turno.horaFin }}
+        </li>
+      </ul>
+    </div>
+
+    <ng-template #sinTurnos>
+      <p class="sin-turnos">Sin turnos asignados</p>
+    </ng-template>
+
+  </div>
+
+</div>
+
+<button class="logout" (click)="logout()">Cerrar sesión</button>

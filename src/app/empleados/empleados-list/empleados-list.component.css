@@ -1,0 +1,72 @@
+.titulo {
+  margin-bottom: 20px;
+}
+
+.empleados-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.empleado-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.empleado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empleado-header h3 {
+  margin: 0;
+}
+
+.btn {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #125ca1;
+}
+
+.turnos {
+  margin-top: 12px;
+}
+
+.turnos ul {
+  padding-left: 18px;
+  margin: 8px 0 0;
+}
+
+.turnos li {
+  margin-bottom: 6px;
+}
+
+.sin-turnos {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+.logout {
+  margin-top: 24px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #b71c1c;
+}

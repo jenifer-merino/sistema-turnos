@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="card">
+    <h2>Iniciar sesión</h2>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div>
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+  </div>
+
+  <div>
+    <label>Contraseña</label>
+    <input type="password" formControlName="password" />
+  </div>
+  <div *ngIf="loginForm.get('password')?.errors?.['minlength']">
+  La contraseña debe tener mínimo 6 caracteres
+</div>
+
+
+  <button type="submit">Ingresar</button>
+</form>
+  </div>
+</div>

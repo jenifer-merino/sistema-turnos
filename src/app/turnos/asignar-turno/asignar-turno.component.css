@@ -1,0 +1,86 @@
+/* Fondo general */
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f8;
+}
+
+
+/* Card */
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 420px;
+}
+
+/* Título */
+.card h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Grid del formulario */
+.form-grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* Grupo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+/* Botón */
+.btn-guardar {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-guardar:hover {
+  background-color: #125ca1;
+}
+
+.btn-volver {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-volver:hover {
+  background-color: #d5d5d5;
+}
+

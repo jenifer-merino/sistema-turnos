@@ -1,27 +1,64 @@
-# SistemaTurnos
+# Sistema de Gestión de Turnos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+Aplicación web desarrollada en Angular para gestionar empleados y asignar turnos de trabajo.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- Login con validaciones (email y contraseña)
+- Protección de rutas con AuthGuard
+- Listado de empleados
+- Asignación de turnos por empleado
+- Validación de horas (fin > inicio)
+- Visualización de turnos asignados
+- Diseño responsive con cards
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clonar el repositorio:
 
-## Running unit tests
+git clone <url>
+cd sistema-turnos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Instalar dependencias:
 
-## Running end-to-end tests
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Ejecutar proyecto
 
-## Further help
+ng serve -o
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Abrir en:
+
+http://localhost:4200
+
+
+## Credenciales de prueba
+
+Email:
+admin@test.com
+
+Contraseña:
+123456
+
+## Tecnologías
+
+- Angular (Standalone Components)
+- TypeScript
+- Reactive Forms
+- CSS
+
+## Notas
+
+- Se usa un servicio en memoria para simular persistencia de turnos.
+- Formularios reactivos con validaciones.
+- Arquitectura basada en componentes standalone.
+
+
+## Autor
+
+~ Jenifer Andrea Meriño Bolívar
+
